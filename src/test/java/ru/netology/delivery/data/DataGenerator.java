@@ -37,7 +37,8 @@ public class DataGenerator {
         }
 
         public static UserInfo generateUser(String locale) {
-            return new UserInfo(generateCity(locale), generateName(locale), generatePhone(locale));
+            var userInfo = new UserInfo(generateCity(locale), generateName(locale), generatePhone(locale));
+            return userInfo;
         }
     }
 
